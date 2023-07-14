@@ -20,8 +20,8 @@ public class InsertController {
         return "insertForm";
     }
 
-//    @PostMapping("/insert")
-//    public String insert(@RequestParam){
-//
-//    }
+    @PostMapping("/insert")
+    public String insert(@RequestParam){
+        return "boardList";
+    }
 }

@@ -21,4 +21,5 @@ public class BoardDTO {
    private int c_no;
    private LocalDateTime reg_dt;
    private LocalDateTime upd_dt;
+   private String reg_id;
 }

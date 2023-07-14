@@ -9,4 +9,5 @@ public class CommentDTO {
     private String cmt_content;
     private LocalDateTime reg_dt;
     private LocalDateTime upd_dt;
+    private String reg_id;
 }

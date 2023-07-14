@@ -10,4 +10,5 @@ public class FileDTO {
     private String file_path;
     private LocalDateTime reg_dt;
     private LocalDateTime upd_Dt;
+    private String reg_id;
 }
