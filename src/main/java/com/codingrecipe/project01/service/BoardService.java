@@ -1,2 +1,4 @@
-package com.codingrecipe.project01.service;public class BoardService {
+package com.codingrecipe.project01.service;
+
+public class BoardService {
 }
