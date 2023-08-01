@@ -21,7 +21,7 @@ public class InsertController {
     }
 
     @PostMapping("/insert")
-    public String insert(@RequestParam){
+    public String insert(@RequestParam() String board){
         return "boardList";
     }
 }

@@ -32,13 +32,15 @@
     <div class="container">
         <form>
             <div class="mb-3 row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">카테고리</label>
+                <label for="category" class="col-sm-2 col-form-label">카테고리</label>
                 <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    <select id ="category">
+                        <option></option>
+                    </select>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">작성자</label>
+                <label for="writer" class="col-sm-2 col-form-label">작성자</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="writer">
                 </div>
@@ -48,25 +50,25 @@
                 <div class="col">
                     <input type="password" class="form-control" id="inputPassword">
                 </div>
-                <label for="inputPassword" class="col-sm-2 col-form-label">비밀번호 확인</label>
+                <label for="inputPassword2" class="col-sm-2 col-form-label">비밀번호 확인</label>
                 <div class="col">
                     <input type="password" class="form-control" id="inputPassword2">
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">제목</label>
+                <label for="title" class="col-sm-2 col-form-label">제목</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="title">
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">내용</label>
+                <label for="content" class="col-sm-2 col-form-label">내용</label>
                 <div class="col-sm-10">
                     <textarea class="form-control" id="content" rows="3"></textarea>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">첨부파일</label>
+                <label for="formFile" class="col-sm-2 col-form-label">첨부파일</label>
                 <div class="col-sm-10">
                     <input class="form-control" type="file" id="formFile">
                 </div>
