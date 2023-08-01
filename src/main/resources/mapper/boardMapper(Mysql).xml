@@ -3,5 +3,48 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="BoardMapper">
+    <insert id="insertboard" parameterType="BoardDTO">
+        INSERT
+        INTO
+            BOARD(BOARD_TITLE,
+                  WRITER_ID,
+                  WRITER_NICK,
+                  BOARD_PWD,
+                  BOARD_PWD2,
+                  BOARD_CONTENT,
+                  REG_DT,
+                  C_NO)
+        VALUES(#{board_title},
+               #{writer_id},
+               #{wirter_nick},
+               #{board_pwd},
+               #{board_pwd2},
+               #{board_content},
+               NOW(),
+               #{c_no})
+
+        <selectKey keyProperty="boardNo" resultType="int" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+
+    <insert id="insertFile" parameterType="FILETO">
+        INSERT
+        INTO
+            FILE(BOARD_NO,
+                 ORG_FILE_NM,
+                 SAVE_FILE_NM,
+                 FILE_PATH,
+                 REG_DT)
+        VALUES(boardNo,
+               #{org_file_nm},
+               #{save_file_nm},
+               #{file_path},
+               NOW())
+    </insert>
+
+
+
 
 </mapper>
