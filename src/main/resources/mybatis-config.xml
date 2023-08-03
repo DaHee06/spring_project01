@@ -3,6 +3,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <typeAlias type="com.codingrecipe.project01.dto.BoardDTO" alias="board"></typeAlias>
+        <typeAlias type="com.codingrecipe.project01.dto.BoardDTO" alias="BoardDTO"></typeAlias>
+        <typeAlias type="com.codingrecipe.project01.dto.CategoryDTO" alias="CategoryDTO"></typeAlias>
+        <typeAlias type="com.codingrecipe.project01.dto.CommentDTO" alias="CommentDTO"></typeAlias>
+        <typeAlias type="com.codingrecipe.project01.dto.FileDTO" alias="FileDTO"></typeAlias>
     </typeAliases>
 </configuration>

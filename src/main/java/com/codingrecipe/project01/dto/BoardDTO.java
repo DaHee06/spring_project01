@@ -1,14 +1,13 @@
 package com.codingrecipe.project01.dto;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
-@ToString
+@Data
 public class BoardDTO {
    private int board_no;
    private String board_title;

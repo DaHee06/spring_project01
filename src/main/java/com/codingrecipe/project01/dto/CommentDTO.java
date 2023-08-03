@@ -1,7 +1,10 @@
 package com.codingrecipe.project01.dto;
 
+import lombok.Data;
+
 import java.time.LocalDateTime;
 
+@Data
 public class CommentDTO {
     private int cmt_no;
     private int board_no;
@@ -10,3 +13,4 @@ public class CommentDTO {
     private LocalDateTime reg_dt;
     private LocalDateTime upd_dt;
 }
+
