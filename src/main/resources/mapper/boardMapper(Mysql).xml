@@ -3,6 +3,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="BoardMapper">
+    <select id="selectCategory" resultType="CategoryDTO">
+        SELECT
+            *
+        FROM
+            category
+    </select>
+
     <insert id="insertboard" parameterType="BoardDTO">
         INSERT
         INTO
@@ -29,7 +36,7 @@
     </insert>
 
 
-    <insert id="insertFile" parameterType="FILETO">
+    <insert id="insertFile" parameterType="FILEDTO">
         INSERT
         INTO
             FILE(BOARD_NO,
@@ -43,8 +50,5 @@
                #{file_path},
                NOW())
     </insert>
-
-
-
 
 </mapper>

@@ -1,7 +1,10 @@
 package com.codingrecipe.project01.dto;
 
+import lombok.Data;
+
 import java.time.LocalDateTime;
 
+@Data
 public class FileDTO {
     private int file_no;
     private int board_no;

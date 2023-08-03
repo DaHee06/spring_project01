@@ -35,7 +35,10 @@
                 <label for="category" class="col-sm-2 col-form-label">카테고리</label>
                 <div class="col-sm-10">
                     <select id ="category">
-                        <option></option>
+                        <option value="">선택해주세요.</option>
+                        <c:forEach var="list" items="${resultList}">
+                            <option value="${list.c_name}"a>${list.c_name}</option>
+                        </c:forEach>
                     </select>
                 </div>
             </div>
